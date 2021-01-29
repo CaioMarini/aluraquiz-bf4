@@ -27,7 +27,7 @@ const QuizBackground = styled.div`
     }
     *:first-child {
       position: relative;
-      z-index: 10;
+      z-index: 9;/*Voltar para 10*/ 
     }
   }
 `;
