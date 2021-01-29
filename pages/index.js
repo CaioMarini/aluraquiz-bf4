@@ -1,18 +1,17 @@
 import styled from 'styled-components'
 import db from '../db.json';
-import Widget from '../src/components/widget'
+import Widget from '../src/components/Widget'
+import QuizLogo from '../src/components/QuizLogo'
+import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
-import QuizBackground from '../src/components/QuizBackground'
 
-
-/* const BackgroundImage = styled.div`  
-  background-image: url(${db.bg});
-  flex: 1;
-  background-size: cover;
-  background-position: center;
-`; */
-
+// const BackgroundImage = styled.div`
+//   background-image: url(${db.bg});
+//   flex: 1;
+//   background-size: cover;
+//   background-position: center;
+// `;
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -25,32 +24,30 @@ export const QuizContainer = styled.div`
   }
 `;
 
-
-
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
+        <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>Battlefild 4</h1>
+            <h1>{db.title}</h1>
           </Widget.Header>
-
           <Widget.Content>
-
+            <p>{db.description}</p>
           </Widget.Content>
-
         </Widget>
+
         <Widget>
           <Widget.Content>
-            asdasdasddasdsa
+            <h1>Quizes da Galera</h1>
+
+            <p>lorem ipsum dolor sit amet...</p>
           </Widget.Content>
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner>
-
-      </GitHubCorner>
+      <GitHubCorner projectUrl="https://github.com/omariosouto" />
     </QuizBackground>
   );
 }
