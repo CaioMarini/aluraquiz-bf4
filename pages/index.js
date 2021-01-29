@@ -13,6 +13,7 @@ import GitHubCorner from '../src/components/GitHubCorner'
 //   background-position: center;
 // `;
 
+
 export const QuizContainer = styled.div`
   width: 100%;
   max-width: 350px;
@@ -23,7 +24,7 @@ export const QuizContainer = styled.div`
     padding: 15px;
   }
 `;
-
+/**/ 
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
