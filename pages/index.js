@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 import db from '../db.json';
 import Widget from '../src/components/Widget'
-import QuizLogo from '../src/components/Quizlogo/Index'
+import QuizLogo from '../src/components/QuizLogo/Index'
 import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
+import Head from 'next/head'
 
 // const BackgroundImage = styled.div`
 //   background-image: url(${db.bg});
