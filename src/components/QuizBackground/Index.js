@@ -1,3 +1,4 @@
+// src/components/QuizBackground/index.js
 import styled from 'styled-components';
 
 const QuizBackground = styled.div`
@@ -27,7 +28,7 @@ const QuizBackground = styled.div`
     }
     *:first-child {
       position: relative;
-      z-index: 9;/*Voltar para 10*/ 
+      z-index: 10;
     }
   }
 `;

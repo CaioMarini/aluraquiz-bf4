@@ -22,9 +22,7 @@ const Widget = styled.div`
   }
 `;
 
-/* Hi*/
 Widget.Header = styled.header`
-
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -51,6 +49,3 @@ Widget.Content = styled.div`
 `;
 
 export default Widget;
-
-
-
